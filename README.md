@@ -10,12 +10,14 @@
 
 #### Modificaciones necesarias para el funcionamiento correcto del código en cualquier placa ESP8266:
 
-1. Incluir la librería Firebase_ESP8266_Client como .zip en Arduino IDE
+1. Incluir las librería Firebase_ESP8266_Client y sparkfun bmp180 como .zip en Arduino IDE
 2. Desde el administrador de librerías/bibliotecas de Arduino IDE, añadir las siguientes: 
 
     - Servo by Michael Margolis
     - DHT sensor library by Adafruit
-3. Configuraciones necesarias para la conexión a internet en: WIFI_SSID y WIFI_PASSWORD
+3. Configuraciones necesarias:  para la conexión a internet en: WIFI_SSID y WIFI_PASSWORD
+Para agregar nave: incluir el nombre de la nave  asignada en el APP CRUD 
+*String path = "/naves/NOMBREMINAVE";*
 4. Sensores incluidos con sus respectivos pines conectados a la placa:
 
     - Servomotor - 2 (**D4**)
